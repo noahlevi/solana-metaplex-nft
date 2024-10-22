@@ -64,7 +64,7 @@ Clone this project to your local machine:
 
 ```bash
 git clone git@github.com:noahlevi/solana-metaplex-nft.git
-cd solana-nft-mint
+cd solana-metaplex-nft
 ```
 
 
