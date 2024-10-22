@@ -97,6 +97,3 @@ docker-compose up --build --force-recreate
 ### 2. Access the GraphQL API:
 
 Open GraphQL Playground at: `http://localhost:4000/graphql`
-
-docker-compose down -v  # This ensures any volume data is reset, freeing cached states
-docker-compose up --build --force-recreate
