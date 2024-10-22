@@ -14,7 +14,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### 1. Install Solana CLI
 
-First, install the Solana Command Line Tools:
+First, install the `Solana Command Line` tools:
 
 ```bash
 sh -c "$(curl -sSfL https://release.solana.com/v1.18.18/install)"
@@ -69,7 +69,7 @@ cd solana-nft-mint
 
 
 ## Set Up Environment Variables
-Create a `.env` file in the root directory of the project with the following content:
+Create a `.env` file (see `example.env`) in the root directory of the project with the following content:
 
 ```
 DATABASE_URL=postgres://user:password@db:5432/nftdb
