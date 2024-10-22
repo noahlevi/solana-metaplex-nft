@@ -20,7 +20,7 @@ First, install the Solana Command Line Tools:
 sh -c "$(curl -sSfL https://release.solana.com/v1.18.18/install)"
 ```
 
-### 2. Add the Solana tools to your PATH by adding this line to your shell configuration file (e.g., .bashrc, .zshrc):
+### 2. Add the Solana tools to your PATH
 
 ```bash
 export PATH="/home/yourusername/.local/share/solana/install/active_release/bin:$PATH"
@@ -63,7 +63,7 @@ Clone this project to your local machine:
 
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:noahlevi/solana-metaplex-nft.git
 cd solana-nft-mint
 ```
 
