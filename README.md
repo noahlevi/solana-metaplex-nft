@@ -74,13 +74,29 @@ Create a `.env` file in the root directory of the project with the following con
 ```
 DATABASE_URL=postgres://user:password@db:5432/nftdb
 WALLET_KEY=[<your-wallet-secret-key-array>]
-SOLANA_RPC_ENDPOINT=https://api.testnet.solana.com
+SOLANA_RPC_ENDPOINT="https://api.devnet.solana.com"
+```
+
+## Running the Application
+
+
+### 1. Build and Start the Docker Containers:
+
+First: 
+```bash 
+docker-compose down -v # This ensures any volume data is reset, freeing cached states
+```   
+
+Then: 
+
+```bash
+docker-compose up --build --force-recreate
 ```
 
 
+### 2. Access the GraphQL API:
 
-docker-compose up --build
-
+Open GraphQL Playground at: `http://localhost:4000/graphql`
 
 docker-compose down -v  # This ensures any volume data is reset, freeing cached states
 docker-compose up --build --force-recreate
