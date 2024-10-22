@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:13
+    container_name: nft-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: nftdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    container_name: solana_nft_app
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - WALLET_KEY=${WALLET_KEY}
+      - SOLANA_RPC_ENDPOINT=${SOLANA_RPC_ENDPOINT}
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+
+volumes:
+  pgdata:

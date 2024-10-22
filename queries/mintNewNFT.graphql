@@ -1,0 +1,15 @@
+mutation mint {
+  mintNFT(
+    metadata: { 
+      name: "Example NFT", 
+      symbol: "EXM", 
+      uri: "https://example.com/image.png", 
+      sellerFeeBasisPoints: 500, 
+      creators: null 
+    },
+    ownerWallet: "AnbiradAD7gCNc6d8gN5EU2oTmmed81w5USZJi1i3bFc"
+  ) {
+    mintAddress
+    metadata
+  }
+}

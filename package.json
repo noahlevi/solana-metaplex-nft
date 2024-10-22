@@ -1,0 +1,19 @@
+{
+    "name": "solana-nft-mint",
+    "version": "1.0.0",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.3",
+        "@apollo/server": "^4.2.0",
+        "graphql": "^16.6.0",
+        "pg": "^8.11.0",
+        "@solana/web3.js": "^1.73.3",
+        "dotenv": "^11.0.0",
+        "apollo-server-express": "^3.x",
+        "@metaplex/js": "^4.12.0 ",
+        "@metaplex-foundation/js": "0.20.1"
+    }
+}

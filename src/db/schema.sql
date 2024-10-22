@@ -1,0 +1,8 @@
+CREATE TABLE nfts (
+    id SERIAL PRIMARY KEY,
+    mint_address VARCHAR(64) UNIQUE NOT NULL,
+    metadata TEXT NOT NULL,
+    owner VARCHAR(64) NOT NULL
+);
+
+ALTER TABLE nfts ALTER COLUMN mint_address SET NOT NULL;

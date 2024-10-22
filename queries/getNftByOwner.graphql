@@ -1,0 +1,8 @@
+
+query getNFTsByOwner($ownerAddress: String!) {
+  nftByOwner(ownerAddress: $ownerAddress) {
+    id
+    mintAddress
+    metadata
+  }
+}
