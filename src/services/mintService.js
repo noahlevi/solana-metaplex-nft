@@ -11,7 +11,7 @@ const mintNFT = async (metadata, ownerWallet) => {
         // Metaplex with the wallet
         const walletKeyPair = Keypair.fromSecretKey(Uint8Array.from(JSON.parse(process.env.WALLET_KEY)));
         const metaplexInstance = Metaplex.make(connection).use(keypairIdentity(walletKeyPair)); // Updated initialization
-        
+
         // debugging
         console.log("DB connection established.");
         console.log("Minting with Metadata:", JSON.stringify(metadata));
@@ -26,7 +26,7 @@ const mintNFT = async (metadata, ownerWallet) => {
         });
 
         // debugging
-        console.log(mintAddress);
+        console.log(mintAddress.toString());
         console.log("AFTER CREATING NFT");
 
         await client.query(
